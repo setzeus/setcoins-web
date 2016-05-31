@@ -1,26 +1,39 @@
 import React from 'react';
+import Scroll from 'react-scroll';
 import Base from './Base.jsx';
 import LandingPage from './LandingPage.jsx';
 import LandingPageInfo from './LandingPageInfo.jsx';
 import LanidngFooter from './LandingFooter.jsx';
-
+//testing components
+import TestingOne from './TestingOne.jsx';
+import TestingTwo from './TestingTwo.jsx';
+import TestingThree from './TestingThree.jsx';
+import Iphone from './Iphone.jsx';
 export default class Home extends Base {
 	constructor(props) {
 		super(props)
 		
 	}
 	
-
-
+	componentDidMount(){
+		this.test()
+	}
+	test(){
+		
+	}
 
 	render() {
 	
 		return (
 			<div id="home">
+				
 				<LandingPage />
-				<LandingPageInfo />
+				<Iphone />
+				<TestingOne/>
+				<TestingTwo />
+				<TestingThree />
 				
 			</div>
 		)
 	}
-}
+	}
