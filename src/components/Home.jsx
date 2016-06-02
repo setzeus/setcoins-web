@@ -5,9 +5,8 @@ import LandingPage from './LandingPage.jsx';
 import LandingPageInfo from './LandingPageInfo.jsx';
 import LanidngFooter from './LandingFooter.jsx';
 //testing components
-import TestingOne from './TestingOne.jsx';
-import TestingTwo from './TestingTwo.jsx';
-import TestingThree from './TestingThree.jsx';
+import BTCWallet from './BTCWallet.jsx';
+
 import Iphone from './Iphone.jsx';
 import ScreenShots from './ScreenShots.jsx';
 
@@ -26,9 +25,9 @@ export default class Home extends Base {
 				
 				<LandingPage />
 				<Iphone />
-				<TestingOne/>
-				<TestingTwo />
-				<TestingThree />
+
+				<BTCWallet/>
+				
 				
 			</div>
 		)

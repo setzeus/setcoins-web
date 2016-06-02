@@ -11,7 +11,7 @@ export default class ScreenShots extends Base {
 	}
 	
 	fadeIn(){
-		
+
 		
 	}
 
@@ -20,10 +20,20 @@ export default class ScreenShots extends Base {
 	render() {
 	
 		return (
-			<div className='Iphone-container' >
-				<img className='screen-shots' src='img/bitcoin-found.jpg'></img>
-				<img className='screen-shots' src='img/btc-wallet.jpg'></img>
-				<img className='screen-shots' src='img/send-btc.jpg'></img>
+			<div className='screen-shots-container' >
+				<div className='single-shots'>
+					
+				</div>
+				<div className='single-shots'>
+					<div className='shots-container'>
+						<img className='screen-shot' src='img/send-btc.jpg'></img>
+					</div>
+				</div>
+				<div className='single-shots'>
+					<div className='shots-container'>
+						<img className='screen-shot' src='img/bitcoin-found.jpg'></img>
+					</div>
+				</div>	
 
 			</div>
 		)
