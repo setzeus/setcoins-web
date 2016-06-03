@@ -24,17 +24,17 @@ export default class Iphone extends Base {
 
 
 			function slider(){ 
-				var target = $(".wallet-scene").offset().top;
+				var target = $(".map-scene").offset().top;
 
 	
-				if($(window).scrollTop() >= target){
+				if($(window).scrollTop() > target){
 					$( ".iphone" ).fadeIn();
-					console.log('it faded in')
+					console.log('Ran function Fadein in Iphone Scene')
 				}
 				
 				else{
 					$('.iphone').fadeOut();
-					console.log('fade out')
+					console.log('Ran function FadeOut in Iphone Scene')
 				}
 			}
 			
@@ -46,9 +46,8 @@ export default class Iphone extends Base {
 	render() {
 	
 		return (
-			<div className='Iphone-container' >
+			<div id='iphone' className='Iphone-container' >
 				<img className='iphone' src='img/img-iphone2.png'></img>
-
 			</div>
 		)
 	}

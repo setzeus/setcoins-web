@@ -23,11 +23,11 @@ export default class BTCWallet extends Base {
 				var target = $(".wallet-scene").offset().top;
 				if($(window).scrollTop() >= target){
 					$( ".btc-wallet" ).fadeIn();
-					console.log('it faded in')
+					console.log('Ran function Fadein in scene BTC Wallet')
 				}
 				else{
 					$('.btc-wallet').fadeOut();
-					console.log('fade out')
+					console.log('Ran function FadeOut in scene BTC Wallet')
 				}
 			}
 	}
@@ -37,7 +37,7 @@ export default class BTCWallet extends Base {
 	render() {
 	
 		return (
-			<div className='wallet-scene' >
+			<div className='wallet-scene section' >
 				<div className='wallet-info'></div>
 
 				<div className='photo-container'>
