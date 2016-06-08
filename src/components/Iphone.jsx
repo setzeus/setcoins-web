@@ -7,11 +7,11 @@ import Base from './Base.jsx';
 export default class Iphone extends Base {
 	constructor(props) {
 		super(props)
-		this.fadeIn()
+		
 	}
 	
 	fadeIn(){
-		$('.iphone').css("display","none");
+		$('#iphone').css("display","none");
 			$(window).scroll(function(){
 				slider();
 			});
@@ -27,13 +27,13 @@ export default class Iphone extends Base {
 				var target = $(".map-scene").offset().top;
 
 	
-				if($(window).scrollTop() > target){
-					$( ".iphone" ).fadeIn();
+				if($(window).scrollTop() >=  target){
+					$( "#iphone" ).fadeIn();
 					console.log('Ran function Fadein in Iphone Scene')
 				}
 				
 				else{
-					$('.iphone').fadeOut();
+					$('#iphone').fadeOut();
 					console.log('Ran function FadeOut in Iphone Scene')
 				}
 			}
@@ -46,8 +46,15 @@ export default class Iphone extends Base {
 	render() {
 	
 		return (
-			<div id='iphone' className='Iphone-container' >
-				<img className='iphone' src='img/img-iphone2.png'></img>
+			<div id='iphone'  >
+				<div className='iphone-container'>
+					<div className='buffer'></div>
+					<div className='iphone-holder'>
+						<img className='iphone'  src='img/img-iphone2.png'></img>
+					</div>
+				</div>
+				
+				
 			</div>
 		)
 	}

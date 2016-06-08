@@ -7,7 +7,7 @@ import Base from './Base.jsx';
 export default class BTCWallet extends Base {
 	constructor(props) {
 		super(props)
-		this.ImageFade()
+		
 	}
 	
 	ImageFade(){
@@ -37,11 +37,11 @@ export default class BTCWallet extends Base {
 	render() {
 	
 		return (
-			<div className='wallet-scene section' >
-				<div className='wallet-info'></div>
+			<div className=' section' >
+				<div  className='wallet-scene'>
+					<div className='wallet-info'></div>
 
-				<div className='photo-container'>
-					<div className='shots-container'>
+					<div className='photo-container'>
 						<img className='screen-shot btc-wallet' src='img/btc-wallet.jpg'></img>
 					</div>
 				</div>	

@@ -9,6 +9,7 @@ import BTCWallet from './BTCWallet.jsx';
 import SetcoinsMap from './SetcoinsMap.jsx';
 import Iphone from './Iphone.jsx';
 import ScreenShots from './ScreenShots.jsx';
+import SendBTC from './SendBTC.jsx';
 
 var $ = require('jquery');
 
@@ -20,10 +21,31 @@ export default class Home extends Base {
 		this.onLoad()
 	}
 	
-	onLoad(){
-		$(document).ready(function() {
-   			 $('#fullpage').fullpage({fixedElements:'#iphone'});
-	 	});
+	onLoad(){	
+		//Start a jqeury funciton that calls fullpage.js which takes a object as a paramater , inside the object all the special methods you want to use
+		$(document).ready(function(){
+			$('#fullpage').fullpage({
+				//All the Full page special methods contained in an object
+				css3: true,
+				
+				
+				
+				onLeave: function(index,nextIndex,direction){
+					console.log('the current index is '+index);
+					console.log('the next index is '+ nextIndex);
+					console.log('the direction is  '+ direction);
+
+					if( nextIndex === 1 && direction === 'up'){
+						$( "#iphone" ).fadeOut('11');	
+					}
+					else if(nextIndex === 2 && direction === 'down'){
+						$( "#iphone" ).fadeIn('slow');
+						$('.iphone').fadeIn();
+					}
+				}
+
+			});
+		})
 	}
 
 	render() {
@@ -31,12 +53,12 @@ export default class Home extends Base {
 
 		return (
 		<div>	
-
+			<Iphone />
 			<div id="fullpage">
 				<LandingPage  />
-				<Iphone />
 				<SetcoinsMap />
 				<BTCWallet/>
+				<SendBTC/>
 			</div>
 			
 		</div>	
