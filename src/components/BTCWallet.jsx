@@ -39,10 +39,14 @@ export default class BTCWallet extends Base {
 		return (
 			<div className=' section' >
 				<div  className='wallet-scene'>
-					<div className='wallet-info'></div>
-
-					<div className='photo-container'>
-						<img className='screen-shot btc-wallet' src='img/btc-wallet.jpg'></img>
+					<div className='wallet-info'>
+						<div className='content-container'>
+							<h1 className='content-title'>Title</h1>
+							<p className='content'>Contnet content content content content content </p>
+						</div>
+						<div className='photo-container'>
+							<img className='screen-shot btc-wallet' src='img/btc-wallet.jpg'></img>
+						</div>
 					</div>
 				</div>	
 			</div>	

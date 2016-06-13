@@ -17,16 +17,12 @@ export default class Iphone extends Base {
 			});
 
 			$(document).ready(function(){
-				
 				slider();
-				
 			});
 
 
 			function slider(){ 
-				var target = $(".map-scene").offset().top;
-
-	
+				var target = $(".map-scene").offset().top;	
 				if($(window).scrollTop() >=  target){
 					$( "#iphone" ).fadeIn();
 					console.log('Ran function Fadein in Iphone Scene')
@@ -46,15 +42,10 @@ export default class Iphone extends Base {
 	render() {
 	
 		return (
-			<div id='iphone'  >
+			<div id='iphone'>
 				<div className='iphone-container'>
-					<div className='buffer'></div>
-					<div className='iphone-holder'>
-						<img className='iphone'  src='img/img-iphone2.png'></img>
-					</div>
+					<img className='iphone'  src='img/img-iphone2.png'></img>
 				</div>
-				
-				
 			</div>
 		)
 	}
