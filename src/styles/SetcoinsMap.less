@@ -11,6 +11,7 @@
    font-family: Avenir Light;
 
 
+
 }
 
 .map-info{
@@ -19,5 +20,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  
+  background-color: red;
+
+}
+
+@media(max-width: 850px){
+  .map-info{
+    width: 500px;
+  }
+}
+
+@media(max-width: 500px){
+  .map-info{
+    width: 300px;
+    flex-direction: column;
+  }
 }
