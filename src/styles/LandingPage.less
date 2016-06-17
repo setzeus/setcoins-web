@@ -6,258 +6,94 @@
 		width: 99vw;
 		height: 100vh;
 	}
-//Landing Header CSS
-	.header{
-		padding-top: 2%;
-		color: #dadfe1;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-	#setcoins-landing-header{
-		margin-left: 14%;
-		font-size: 1.5vw;
-	}
-	#setmine-logo{
-		height: auto;
-		width: 2.5vw;
-		margin: 0;
-		color: #dadfe1 ;
-	}
-	.header-2{
-		width: 10vw;
-		margin-left: 2%;
-		align-items: center;
-	}
-	#btc-value{
-		margin-right: 2%;
-		font-size: 1.5vw;
-	}
 	.economy-button{
-
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		
-		width: 100%;
+		background-color: yellow;
 
 	}
-
-//End of landing Header CSS
-
-
-
-//Feel the Economy CSS
-
 	.root-container{
 		display: flex;
 		flex-direction: column;
-
+		align-items: flex-start;
+		justify-content: space-between;
+		height: 350px;
+		width: 1200px;
+		margin-top: 50px;
+		background-color: green;
 	}
+
 	.economy-container{
+		
+		width:900px;
+		height: 300px;
 		display: flex;
 		flex-direction: row;
-		width: 100%;
-		height: 50%;
-		justify-content: space-around;
-		align-items: center;
-		padding-top: 5%;
-		
-		
-
+		justify-content: space-between;
 		
 	}
 
 	.can-you-feel-it{
-		width: 65%;
-		height: 50%;
+		color: #dadfe1;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		margin-bottom: 10%;
-
+		justify-content: space-around;
 	}
 	#feel-the-new-economy{
-		font-size: 3.5vw;
-		
-		color: white;
+		font-size: 3vw;
 	}
+	.free-btc{
+		margin-top: 10px;
+		p{
+			font-size: 2vw;
+		}
+	}
+	@media(max-width: 1100px){
+		.root-container{
+			width:900px
+		}
+	}
+	@media(max-width:900px){
+		.root-container{
+			width: 600px;
+			height: 600px;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.economy-container{
+			flex-direction: column;
+			justify-content: space-around;
+			width: 600px;
+			height: 400px;
+			align-items: center;
+		}
+		.can-you-feel-it{
+			justify-content: center;
+			align-items: center;
+		}
+		#feel-the-new-economy{
+			font-size: 7vw;
+		}	
+	}
+
+	@media(max-width: 500px){
+		.root-container{
+			width: 300px;
+			
+		}
+		#feel-the-new-economy{
+		font-size: 8vw;
+		}
 		.free-btc{
-			font-size: 1.8vw;
-			margin-right:22%;
-			margin-top: 5%;
+			margin-top: 10px;
 			p{
-				color: #dadfe1;
-				margin-bottom: 3%;
+				font-size: 4vw;
 			}
 		}
-
-
-
-	.video-container{
-		margin-right: 2%;
-		align-items: center;
-		justify-content: space-between;
-
 	}
-		#video{
-			width: 34vw;
-			height: 40vh;
-			margin-bottom: 10%;
-		}
-//End of Feel the Economy CSS	
-
-//Media Queres for Feel the Economy and Video CSS
-
-@media only screen and (max-width: 480px) {
- 	
-.economy-container{
-		
-		flex-direction: column;
-		width: 100%;
-		height: 60%;
-		justify-content: space-between;
-		align-items: center;
-		
-	}
-	.can-you-feel-it{
-		width: 90%;
-		height: 40%;
-		flex-direction: column;
-		justify-content: space-around;
-		margin-bottom: 0%;
-		margin-top: 6%;
-
-	}
-	#feel-the-new-economy{
-		font-size: 7vw;
-	}
- 	.free-btc{
- 		margin-bottom: 0;
- 		font-size: 3vw;
- 		margin-right: 0;
- 		align-items: center;
- 	}
- 	#video{
- 		width: 60vw;
- 		height: 29vh;
- 		margin-bottom: 0;
- 	}
- } 
-
-
-//End of Media Quieres for Feel the Economy and Video CSS
-
-
-//Join the Movement CSS
-	.button-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		
-	}
-	.join-movement{
-		margin-right: 30vw;
-		background-color: #fdb802;
-		width: 20vw;
-		height: 10vh;
-		border-radius: 8px;
-		align-items: center;
-		color: #f5d76e;
-		font-size: 1.5vw;
-		box-shadow: none;
-		justify-content: space-around;
-		text-decoration: none;
-		align-items: center;
-		
-
-		.fa-facebook{
-			color: white;
-			font-size: 3vw;
-		}
-		p{
-			color: white;
-		}
-		a{
-			width: 100%;
-			height: 100%;
-			text-decoration: none;
-		}
-	}
-// End of Join the Movement CSS
-
-// Media Quieres for Button Contianer CSS
-@media only screen and (max-width: 480px) {
- 	.button-container{
- 		margin-top: 10%;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		
-	}
-	.join-movement{
-		margin-right: 0;
-		
-		width: 40vw;
-		height: 8vh;
-		
-		font-size: 2.7vw;
-		
-		
-		
-		margin-left: 0;
-
-		.fa-facebook{
-			color: white;
-			font-size: 6.5vw;
-		}
-		p{
-			color: white;
-			font-size: 3.5vw;
-		}
-	}		
-
- } 
-
-//End of Media Quieries for Button Container CSS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
