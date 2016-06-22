@@ -19,12 +19,14 @@ export default class Home extends Base {
 	constructor(props) {
 		super(props)
 		this.onLoad()
+
 	}
 	
 	onLoad(){	
 		//Start a jqeury funciton that calls fullpage.js which takes a object as a paramater , inside the object all the special methods you want to use
 		$(document).ready(function(){
 			$('#fullpage').fullpage({
+
 				//All the Full page special methods contained in an object
 				css3: true,
 				onLeave: function(index,nextIndex,direction){
@@ -47,7 +49,7 @@ export default class Home extends Base {
 
 	render() {
 	 
-
+		console.log('testing')
 		return (
 		<div>	
 			<Iphone />
