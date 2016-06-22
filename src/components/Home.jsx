@@ -27,9 +27,6 @@ export default class Home extends Base {
 			$('#fullpage').fullpage({
 				//All the Full page special methods contained in an object
 				css3: true,
-				
-				
-				
 				onLeave: function(index,nextIndex,direction){
 					console.log('the current index is '+index);
 					console.log('the next index is '+ nextIndex);
