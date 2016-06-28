@@ -21,7 +21,11 @@ export default class Home extends Base {
 		this.onLoad()
 	}
 	
-	onLoad(){	
+	onLoad(){
+
+		    console.log($(window).width())
+		    console.log($(window).height())
+		
 		//Start a jqeury funciton that calls fullpage.js which takes a object as a paramater , inside the object all the special methods you want to use
 		$(document).ready(function(){
 			$('#fullpage').fullpage({

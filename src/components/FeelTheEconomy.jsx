@@ -14,7 +14,7 @@ export default class FeelTheEconomy extends Base{
 								<p id='feel-the-new-economy'>Feel The New Economy</p>
 								<div className='free-btc'>
 									<p>Because the solution to inequality is education,</p>
-									<p>Were giving away 24 free Bitcoin</p>
+									<p>Were giving away 24 free Bitcoins</p>
 								</div>	
 
 							</div>
