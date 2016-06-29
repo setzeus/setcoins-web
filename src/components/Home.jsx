@@ -54,14 +54,14 @@ export default class Home extends Base {
 
 		return (
 		<div>	
-			<Iphone />
 			<div id="fullpage">
 				<LandingPage  />
+				
 				<SetcoinsMap />
 				<BTCWallet/>
 				<SendBTC/>
 			</div>
-			
+			<Iphone />
 		</div>	
 		)
 	}
