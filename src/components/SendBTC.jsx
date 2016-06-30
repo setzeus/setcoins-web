@@ -20,17 +20,12 @@ export default class SendBTc extends Base {
 	render() {
 	
 		return (
-			<div className='section' >
-				<div className='map-scene'>
-					<div className='map-info'>
-						<div className='content-container'>
+			<div className='section features' id='section3'>
+				<div className='inner container-centered text-right'>
+						<div className=' animated '>
 							<h1 className='content-title'>Title</h1>
 							<p className='content'>Contnet content content content content content </p>
 						</div>
-						<div className='photo-container'>
-							<img className='screen-shot send-btc' src='img/send-btc.jpg'></img>
-						</div>	
-					</div>
 				</div>
 			</div>	
 		)

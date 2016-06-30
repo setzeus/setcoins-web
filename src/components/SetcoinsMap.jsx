@@ -15,17 +15,12 @@ export default class SetcoinsMap extends Base {
 	render() {
 	
 		return (
-			<div className='section' >
-				<div className='map-scene'>
-					<div className='map-info'>
-						<div className='content-container'>
+			<div className='section features' id='section1'>
+				<div className='inner container-centered text-right'>
+						<div className=' animated '>
 							<h1 className='content-title'>Title</h1>
 							<p className='content'>Contnet content content content content content </p>
 						</div>
-						<div className='photo-container'>
-							<img className='screen-shot send-btc' src='img/setcoins-map.jpg'></img>
-						</div>	
-					</div>	
 				</div>
 			</div>	
 		)

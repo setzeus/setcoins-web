@@ -2,9 +2,7 @@ import React from 'react';
 import Scroll from 'react-scroll';
 import Base from './Base.jsx';
 import LandingPage from './LandingPage.jsx';
-import LandingPageInfo from './LandingPageInfo.jsx';
 import LanidngFooter from './LandingFooter.jsx';
-//testing components
 import BTCWallet from './BTCWallet.jsx';
 import SetcoinsMap from './SetcoinsMap.jsx';
 import Iphone from './Iphone.jsx';
@@ -29,21 +27,42 @@ export default class Home extends Base {
 		//Start a jqeury funciton that calls fullpage.js which takes a object as a paramater ,
 		// inside the object all the special methods you want to use
 		$(document).ready(function(){
-			$('#fullpage').fullpage({
+			$('#fullpage , #fullpage2').fullpage({
 				//All the Full page special methods contained in an object
+				verticalCentered: false,
+				
 				css3: true,
+				afterLoad: function(anchorLink, index){
+					if(index == 1){
+						$('.second-fullpage').removeClass('show')
+						$('#section0 .animated').addClass('fadeInDown')
 
-				onLeave: function(index,nextIndex,direction){
-					console.log('the current index is '+index);
-					console.log('the next index is '+ nextIndex);
-					console.log('the direction is  '+ direction);
-
-					if( nextIndex === 1 && direction === 'up'){
-						$( "#iphone" ).fadeOut('11');	
+					} else{
+						$('#fp-nav').slideDown(400);
+						$('.second-fullpage').addClass('show')
 					}
-					else if(nextIndex === 2 && direction === 'down'){
-						$( "#iphone" ).fadeIn('slow');
-						$('.iphone').fadeIn();
+				},
+				onLeave: function(anchorLink, index){
+					if(index == 1){
+						$('.second-fullpage').removeClass('show')
+					} else{
+						// $('#fp-nav, .second-fullpage').show();
+					}
+					if(index == 2){
+						console.log('index = 2')
+						$('#section1 .animated').addClass('fadeInDown')
+					}else{
+						$('#section1 .animated').removeClass('fadeInDown')
+					}
+					if(index == 3){
+						$('#section2 .animated').addClass('fadeInDown')
+					}else{
+						$('#section2 .animated').removeClass('fadeInDown')
+					}
+					if(index == 4){
+						$('#section3 .animated').addClass('fadeInDown')
+					}else{
+						$('#section3 .animated').removeClass('fadeInDown')
 					}
 				}
 
@@ -56,15 +75,20 @@ export default class Home extends Base {
 
 		return (
 		<div>	
-			<Iphone />
 			<div id="fullpage">
-				<LandingPage  />
-				<SetcoinsMap />
+				<LandingPage/>
+				<SetcoinsMap/>	
 				<BTCWallet/>
 				<SendBTC/>
+				
 			</div>
-			
-		</div>	
+			<div className='second-fullpage show'>
+				<Iphone/>
+			</div>
+			<div className='second-fullpage inscren show'>
+				<ScreenShots/>
+			</div>
+		</div>		
 		)
 	}
 	}

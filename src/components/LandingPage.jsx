@@ -6,7 +6,7 @@ import LandingHeader from './LandingHeader.jsx';
 export default class LandingPage extends Base {
 	render(){
 		return(
-				<div className='section'>
+				<div className='section' id='section0'>
 					<div id='landing-page'>
 						<LandingHeader/>
 						<div className='economy-button'>
