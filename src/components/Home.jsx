@@ -26,11 +26,13 @@ export default class Home extends Base {
 		    console.log($(window).width())
 		    console.log($(window).height())
 		
-		//Start a jqeury funciton that calls fullpage.js which takes a object as a paramater , inside the object all the special methods you want to use
+		//Start a jqeury funciton that calls fullpage.js which takes a object as a paramater ,
+		// inside the object all the special methods you want to use
 		$(document).ready(function(){
 			$('#fullpage').fullpage({
 				//All the Full page special methods contained in an object
 				css3: true,
+
 				onLeave: function(index,nextIndex,direction){
 					console.log('the current index is '+index);
 					console.log('the next index is '+ nextIndex);
@@ -54,14 +56,14 @@ export default class Home extends Base {
 
 		return (
 		<div>	
+			<Iphone />
 			<div id="fullpage">
 				<LandingPage  />
-				
 				<SetcoinsMap />
 				<BTCWallet/>
 				<SendBTC/>
 			</div>
-			<Iphone />
+			
 		</div>	
 		)
 	}
