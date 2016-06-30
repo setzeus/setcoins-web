@@ -26,24 +26,202 @@
 
 
 
-@media(max-width: 850px){
-	.iphone-container{		
-		width: 500px;
-	}
+ @media only screen and (max-width: 420px) {
+      
+    .box-phone{
+      margin: 0;
+    }
+    .box-phone img {
+        margin:auto;
+
+    }
+    .second-fullpage.show {
+    	top: 75% !important;
+    	transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+    }
+    .second-fullpage {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        transform: scale(0.7);
+    }
+    .second-fullpage.inscren {
+    	height: 415px;
+    }
+    .wrapper-scren {
+      margin-left: 3px;
+    }
+    h2 {
+          font-size: 20px;
+        }
+        .section .inner p {
+          font-size: 16px;
+        }
+    }
+
+
+    @media only screen and (max-width : 895px) {
+
+    .box-phone img {
+    	margin-left: -21px;
+    }
+    .second-fullpage.show {
+    	top: 70% !important;
+    	transform: scale(0.85);
+    }
+    .second-fullpage {
+      transform: scale(0.85);
+      -webkit-transform: scale(0.85);
+    }
+    .second-fullpage.inscren {
+    	width: 100%;
+        text-align: center;
+        right: 0;
+        margin-right: 1px;
+        height: 409px;
+    }
+
+    .second-fullpage {
+        left: 0;
+        right: 0;
+    }
+
+
+    .section .cover h2 {
+     	font-size: 24px;
+    	letter-spacing: 1px;
+    	line-height: 28px;
+    	margin-left: 45px;
+    	margin-right: 45px;
+    }
+
+    #section0 .container-centered {
+      top: 50%;
+    }
+
+    
+    .text-right {
+      text-align: center;
+    }
+    .section .inner p {
+    	margin-left: 45px;
+    	margin-right: 45px;
+    }
+    .container-centered {
+    	top: 33%;
+    }
+    .section .inner{
+    	padding: 0;
+    }
 }
 
-@media(max-width: 500px){
-	.iphone-container{
-		justify-content: center;
 
+@media only screen and (max-width: 420px) {
+      
+     
+    .box-phone{
+    	margin: 0;
+    }
+    .box-phone img {
+        margin:auto;
 
+    }
+    .second-fullpage.show {
+    	top: 75% !important;
+    	transform: scale(0.7);
+    }
+    .second-fullpage {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        transform: scale(0.7);
+        
+    }
+    .second-fullpage.inscren {
+    	height: 415px;
+    }
+    .wrapper-scren {
+    	margin-left: 3px;
+    }
+    h2 {
+          font-size: 20px;
+        }
+        .section .inner p {
+          font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 355px) {
+	    .section .inner p {
+	      margin-bottom: 10px;
+	    }
+	    .second-fullpage.show {
+	      top: 90% !important;
+	    }
+    }
+
+  @media only screen and (max-height: 820px) and (max-width: 1023px) {
+   
+    .second-fullpage.show {
+      transform: scale(1);
+    }
+    .second-fullpage {
+      transform: scale(1);
+    }
+    .second-fullpage.inscren {
+      height: 424px;
+    }
+  }
+
+  @media only screen and (max-height: 690px) and (max-width: 1023px) {
+    .container-centered {
+      top: 25%;
+    }
+  }
+
+  @media only screen and (max-height: 640px) and (max-width: 1023px) {
+	.second-fullpage.show {
+	  transform: scale(0.9);
 	}
-	.iphone{
-		margin-top: 600px;
-		margin-right: 80px;
+	.second-fullpage {
+	  transform: scale(0.9);
 	}
-}
+	.second-fullpage.inscren {
+	  height: 411px;
+	}
+  }
 
+  @media only screen and (max-height: 550px) and (max-width: 1023px) {
+    .second-fullpage.show {
+      transform: scale(0.8);
+    }
+    .second-fullpage {
+      transform: scale(0.8);
+    }
+    .second-fullpage.inscren {
+      height: 400px;
+    }
+  }
+
+  /*iphone 5*/
+  @media only screen and (max-height: 500px) and (max-width: 1023px) {
+    .second-fullpage.show {
+      top: 95% !important;
+    }
+    .container-centered {
+      top: 30%;
+    }
+  }
+  /*iphone 4*/
+  @media only screen and (max-height: 400px) and (max-width: 1023px) {
+    .second-fullpage.show {
+      display: none;
+    }
+    .container-centered, #section0 .container-centered {
+      top: 40%;
+    }
+  }
 
 
 
