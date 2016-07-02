@@ -18,8 +18,8 @@ export default class SetcoinsMap extends Base {
 			<div className='section features' id='section1'>
 				<div className='inner container-centered text-right'>
 						<div className=' animated '>
-							<h1 className='content-title'>Title</h1>
-							<p className='content'>Contnet content content content content content </p>
+							<h1 className='content-title'>Explore Locally, Collect Bitcoin</h1>
+							<p className='content'>Remember geo-caching? We do. We built Setcoins with the same spirit in mind: explore exciting places around to start collecting free bitcoin.</p>
 						</div>
 				</div>
 			</div>	

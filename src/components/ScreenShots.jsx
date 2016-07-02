@@ -20,23 +20,23 @@ export default class ScreenShots extends Base {
 	render() {
 	
 		return (
-			<div className='fullpage-wrapper' id='fullpage2' >
-				<div className='section shots' >
+			<div className='fullpage-wrapper ' id='fullpage2' >
+				<div className='section ' >
 					
 				</div>
-				<div className='section shots'>
+				<div className='section '>
 					<div className='wrapper-screen'>
-						<img className='screen-shots' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/home-screen-polished.png'></img>
+						<img className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-home.png'></img>
 					</div>
 				</div>
-				<div className='section shots' >
+				<div className='section ' >
 					<div className='wrapper-screen'>
-						<img className='screen-shots' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/wallet-polished.png'></img>
+						<img className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-wallet.png'></img>
 					</div>
 				</div>
-				<div className='section shotsb' >
+				<div className='section ' >
 					<div className='wrapper-screen'>
-						<img className='screen-shots' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/withdraw.png'></img>
+						<img className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-withdraw.png'></img>
 					</div>
 				</div>
 			</div>
