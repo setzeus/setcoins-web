@@ -43,7 +43,7 @@ export default class Iphone extends Base {
 	
 		return (
 			<div className='box-phone' id='iphone'>
-				<img className='iphone'  src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/Nexus-5.png'></img>
+				<img className='iphone'  src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/nexus-empty.png'></img>
 			</div>
 		)
 	}

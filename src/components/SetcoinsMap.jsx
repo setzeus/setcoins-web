@@ -19,7 +19,7 @@ export default class SetcoinsMap extends Base {
 				<div className='inner container-centered text-right'>
 						<div className=' animated '>
 							<h1 className='content-title'>Explore Locally, Collect Bitcoin</h1>
-							<p className='content'>Remember geo-caching? We do. We built Setcoins with the same spirit in mind: explore exciting places around to start collecting free bitcoin.</p>
+							<p className='content'>Remember geo-chaching? We do. We build Setcoins with the same spirit in mind: explore exciting places around to start collecting free bitcoin</p>
 						</div>
 				</div>
 			</div>	

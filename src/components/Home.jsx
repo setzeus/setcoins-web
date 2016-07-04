@@ -42,27 +42,38 @@ export default class Home extends Base {
 						$('.second-fullpage').addClass('show')
 					}
 				},
-				onLeave: function(anchorLink, index){
+				onLeave: function(anchorLink, index,nextIndex){
 					if(index == 1){
 						$('.second-fullpage').removeClass('show')
 					} else{
-						// $('#fp-nav, .second-fullpage').show();
+						
 					}
 					if(index == 2){
 						console.log('index = 2')
 						$('#section1 .animated').addClass('fadeInDown')
+						$('#shot-1').fadeIn()
+						$('#shot-1').addClass('fadeInDown')
 					}else{
 						$('#section1 .animated').removeClass('fadeInDown')
+						$('#shot-1').fadeOut()
 					}
 					if(index == 3){
+						console.log('index = 3')
 						$('#section2 .animated').addClass('fadeInDown')
+						$('#shot-2').fadeIn()
+						$('#shot-2').addClass('fadeInDown')
 					}else{
 						$('#section2 .animated').removeClass('fadeInDown')
+						$('#shot-2').fadeOut()
 					}
 					if(index == 4){
+						console.log('index = 4')
 						$('#section3 .animated').addClass('fadeInDown')
+						$('#shot-3').fadeIn()
+						$('#shot-3').addClass('fadeInDown')
 					}else{
 						$('#section3 .animated').removeClass('fadeInDown')
+						$('#shot-3').fadeOut()
 					}
 				}
 
@@ -85,8 +96,22 @@ export default class Home extends Base {
 			<div className='second-fullpage show'>
 				<Iphone/>
 			</div>
-			<div className='second-fullpage inscren show'>
-				<ScreenShots/>
+			<div  className='second-fullpage inscren show'>
+				
+					<div className='wrapper-screen animated'>
+						<img id='shot-1' className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-home.png'></img>
+					</div>
+			
+				
+					<div className='wrapper-screen animated'>
+						<img id='shot-2'className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-wallet.png'></img>
+					</div>
+				
+				
+					<div className='wrapper-screen animated'>
+						<img id='shot-3'className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-withdraw.png'></img>
+					</div>
+				
 			</div>
 		</div>		
 		)
