@@ -3,6 +3,8 @@
 		background-image: url('http://d1wbxby8dwa4u.cloudfront.net/namecheap/setcoinsBackground.png') ;
 		background-size: 100%;
 		padding: 0;
+		position: relative;
+		overflow: hidden;
 	}
 	#landing-page{
 		font-family: Avenir Light;
@@ -93,7 +95,10 @@
 	.app-icons.clickable {
     	cursor: pointer;
 	}
-
+	@media only screen and (max-height: 820px) and (max-width: 1023px) {
+   
+    
+  	}
 
 	@media(max-device-width: 1100px){
 		.root-container{
@@ -105,6 +110,7 @@
 		}
 	}
 	@media(max-device-width:900px ){
+		
 		.root-container{
 			width: 600px;
 			height: 600px;
@@ -175,10 +181,12 @@
 		#video{
 			height: 100px;
 			width: 200px;
-			margin-bottom: 70px;
+			margin-bottom: 40px;
 		}
 		.button-container{
 			margin-top: 0;
+			flex-direction: column;
+			height: 120px;
 		}
 		.economy-container{
 			
@@ -188,6 +196,7 @@
 		.can-you-feel-it{
 			margin-bottom: 10px;
 		}
+
 	}
 
 

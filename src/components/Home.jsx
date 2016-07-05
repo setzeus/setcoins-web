@@ -49,7 +49,6 @@ export default class Home extends Base {
 						
 					}
 					if(index == 2){
-						console.log('index = 2')
 						$('#section1 .animated').addClass('fadeInDown')
 						$('#shot-1').fadeIn()
 						$('#shot-1').addClass('fadeInDown')
@@ -58,7 +57,6 @@ export default class Home extends Base {
 						$('#shot-1').fadeOut()
 					}
 					if(index == 3){
-						console.log('index = 3')
 						$('#section2 .animated').addClass('fadeInDown')
 						$('#shot-2').fadeIn()
 						$('#shot-2').addClass('fadeInDown')
@@ -67,7 +65,6 @@ export default class Home extends Base {
 						$('#shot-2').fadeOut()
 					}
 					if(index == 4){
-						console.log('index = 4')
 						$('#section3 .animated').addClass('fadeInDown')
 						$('#shot-3').fadeIn()
 						$('#shot-3').addClass('fadeInDown')
