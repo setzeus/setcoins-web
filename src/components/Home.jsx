@@ -1,12 +1,9 @@
 import React from 'react';
-import Scroll from 'react-scroll';
 import Base from './Base.jsx';
 import LandingPage from './LandingPage.jsx';
-import LanidngFooter from './LandingFooter.jsx';
 import BTCWallet from './BTCWallet.jsx';
 import SetcoinsMap from './SetcoinsMap.jsx';
 import Iphone from './Iphone.jsx';
-import ScreenShots from './ScreenShots.jsx';
 import SendBTC from './SendBTC.jsx';
 
 var $ = require('jquery');
@@ -42,35 +39,61 @@ export default class Home extends Base {
 						$('.second-fullpage').addClass('show')
 					}
 				},
-				onLeave: function(anchorLink, index,nextIndex){
+				onLeave: function(anchorLink, index,direction){
 					if(index == 1){
 						$('.second-fullpage').removeClass('show')
-					} else{
+						console.log(index,direction)
+					}else{
 						
 					}
-					if(index == 2){
+
+					if(index == 2 && direction == 'down'){
+						console.log(index,direction)
 						$('#section1 .animated').addClass('fadeInDown')
 						$('#shot-1').fadeIn()
 						$('#shot-1').addClass('fadeInDown')
+					}
+					else if(index == 2 && direction == 'up' ){
+						console.log('i broke it ')
+						$('#section1 .animated').addClass('fadeInUp')
+						$('#shot-1').fadeIn()
+						$('#shot-1 .animated' ).addClass('fadeInUp')
 					}else{
 						$('#section1 .animated').removeClass('fadeInDown')
 						$('#shot-1').fadeOut()
+						$('#shot-1').removeClass('fadeInUp')
 					}
-					if(index == 3){
+
+					if(index == 3 && direction == 'down'){
+						console.log(index,direction)
 						$('#section2 .animated').addClass('fadeInDown')
 						$('#shot-2').fadeIn()
 						$('#shot-2').addClass('fadeInDown')
+					}
+					else if(index == 3 && direction == 'up' ){
+						$('#section2 .animated').addClass('fadeInUp')
+						$('#shot-2').fadeIn()
+						$('#shot-2 .animated' ).addClass('fadeInUp')
 					}else{
 						$('#section2 .animated').removeClass('fadeInDown')
 						$('#shot-2').fadeOut()
+						$('#shot-2').removeClass('fadeInUp')
+
 					}
 					if(index == 4){
+						console.log(index,direction)
 						$('#section3 .animated').addClass('fadeInDown')
 						$('#shot-3').fadeIn()
 						$('#shot-3').addClass('fadeInDown')
+					}
+					else if(index == 4 && direction == 'up' ){
+						$('#section3 .animated').addClass('fadeInUp')
+						$('#shot-3').fadeIn()
+						$('#shot-3 .animated' ).addClass('fadeInUp')
 					}else{
 						$('#section3 .animated').removeClass('fadeInDown')
 						$('#shot-3').fadeOut()
+						$('#shot-3').removeClass('fadeInUp')
 					}
 				}
 
@@ -95,18 +118,18 @@ export default class Home extends Base {
 			</div>
 			<div  className='second-fullpage inscren show'>
 				
-					<div className='wrapper-screen animated'>
-						<img id='shot-1' className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-home.png'></img>
+					<div className='wrapper-screen '>
+						<img id='shot-1' className='setcoins-photo animated' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-home.png'></img>
 					</div>
 			
 				
-					<div className='wrapper-screen animated'>
-						<img id='shot-2'className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-wallet.png'></img>
+					<div className='wrapper-screen '>
+						<img id='shot-2'className='setcoins-photo animated' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-wallet.png'></img>
 					</div>
 				
 				
-					<div className='wrapper-screen animated'>
-						<img id='shot-3'className='setcoins-photo' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/new-withdraw.png'></img>
+					<div className='wrapper-screen '>
+						<img id='shot-3'className='setcoins-photo animated' src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/newWithdraw.png'></img>
 					</div>
 				
 			</div>
