@@ -26,6 +26,12 @@ export default class SendBTc extends Base {
 							<h1 className='content-title'>Instant Use</h1>
 							<p className='content'>Download, & immediately you can start earning bitcoin by exploring your city & sharing the app. And like any bitcoin wallet, you’ll be able to transfer bitcoin to any other bitcoin wallet or address.</p>
 						</div>
+						<div className='app-container bottom'>
+							<i className='fa app-icons screen clickable fa-apple'></i>	
+							<a href='https://play.google.com/store/apps/details?id=com.setmusic.setcoins&hl=en' >
+								<i className='fa app-icons  screen clickable fa-android'></i>
+							</a>	
+						</div>
 				</div>
 			</div>	
 		)
