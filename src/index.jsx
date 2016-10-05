@@ -6,7 +6,7 @@ import routes from './routes.jsx';
 var bodyMount = document.getElementById('body-mount-point');
 
 ReactDOM.render(
-    <Router history={browserHistory} >
+    <Router history={browserHistory}>
         {routes}
     </Router>
 , bodyMount);
