@@ -10,45 +10,20 @@ export default class BTCWallet extends Base {
 		
 	}
 	
-	ImageFade(){
-		$('.btc-wallet').css("display","none");
-			$(window).scroll(function(){
-				slider();
-			});
-			$(document).ready(function(){
-				slider();
-			});
-
-			function slider(){ 
-				var target = $(".wallet-scene").offset().top;
-				if($(window).scrollTop() >= target){
-					$( ".btc-wallet" ).fadeIn();
-					console.log('Ran function Fadein in scene BTC Wallet')
-				}
-				else{
-					$('.btc-wallet').fadeOut();
-					console.log('Ran function FadeOut in scene BTC Wallet')
-				}
-			}
-	}
+	
 
 
 
 	render() {
 	
 		return (
-			<div className=' section' >
-				<div  className='wallet-scene'>
-					<div className='wallet-info'>
-						<div className='content-container'>
-							<h1 className='content-title'>Title</h1>
-							<p className='content'>Contnet content content content content content </p>
+			<div className='section features' id='section2'>
+				<div className='inner container-centered text-right'>
+						<div className=' animated '>
+							<h1 className='content-title'>Learn Through Using</h1>
+							<p className='content wallet'>We didn’t know it back then, but MIT indirectly inspired this movement. In early 2014, they gave away $100 worth of Bitcoin to each of it’s <a id='mit' href='https://techcrunch.com/2014/04/29/mits-bitcoin-club-to-give-100-in-btc-to-every-student/'>students</a>. We agree that the best way to learn about something is by using it, but we thought everybody should have that opportunity.</p>
 						</div>
-						<div className='photo-container'>
-							<img className='screen-shot btc-wallet' src='img/btc-wallet.jpg'></img>
-						</div>
-					</div>
-				</div>	
+				</div>
 			</div>	
 		)
 	}

@@ -10,51 +10,17 @@ export default class SetcoinsMap extends Base {
 		
 	}
 	
-	fadeIn(){
-		$('.send-btc').css("display","none");
-			$(window).scroll(function(){
-				slider();
-			});
-
-			$(document).ready(function(){
-				slider();
-			});
-
-			function slider(){ 
-				var componentPeak = $(".map-scene").offset().top;
-
-				if($(window).scrollTop() >= componentPeak){
-					$('.send-btc').fadeIn();
-					console.log('Showed photo in Map Scene componet');
-				}
-				
-				else{
-					$('.send-btc').fadeOut();
-					console.log('Ran function Fadeout in Setcoins map Scene ' );
-
-				}
-			}
-			
-		
-	}
 
 
 	render() {
 	
 		return (
-			<div className='section' >
-				<div className='map-scene'>
-					<div className='map-info'>
-						<div className='content-container'>
-							<h1 className='content-title'>Title</h1>
-							<p className='content'>Contnet content content content content content </p>
+			<div className='section features' id='section1'>
+				<div className='inner container-centered text-right'>
+						<div className=' animated '>
+							<h1 className='content-title'>Explore Locally, Collect Bitcoin</h1>
+							<p className='content'>Remember geo-chaching? We do. We build Setcoins with the same spirit in mind: explore exciting places around to start collecting free bitcoin</p>
 						</div>
-						<div className='photo-container'>
-							<img className='screen-shot send-btc' src='img/setcoins-map.jpg'></img>
-						</div>	
-					</div>
-
-						
 				</div>
 			</div>	
 		)

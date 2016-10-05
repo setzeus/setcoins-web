@@ -14,21 +14,29 @@ export default class FeelTheEconomy extends Base{
 								<p id='feel-the-new-economy'>Feel The New Economy</p>
 								<div className='free-btc'>
 									<p>Because the solution to inequality is education,</p>
-									<p>Were giving away 24 free Bitcoin</p>
+									<p>We're giving away 24 free Bitcoins</p>
 								</div>	
 
 							</div>
 							<div className='video-container'>
-								<iframe id='video'  src="https://www.youtube.com/embed/tKPi2J3K1Jk" frameBorder="0" allowFullScreen>
+								<iframe id='video'  src="https://www.youtube.com/embed/VePpQBCbKBw" frameBorder="0" allowFullScreen>
 								</iframe>
 							</div>
-						</div>	
-						<div className='button-container'>
-							<a className='set-flex join-movement' href='http://www.facebook.com/groups/1530020757301559/' target='blank'>
-								<i className='fa fa-facebook'></i>
-								<p id='join-the-movement'>Join the Movement</p>
-							</a>	
 						</div>
+						<div className='buttons-container'>
+							<div className='button-container'>
+								<a className='set-flex join-movement' href='http://www.facebook.com/groups/1530020757301559/' target='blank'>
+									<i className='fa fa-facebook'></i>
+									<p id='join-the-movement'>Join the Movement</p>
+								</a>	
+							</div>
+							<div className='app-container'>
+								<i className='fa app-icons clickable fa-apple'></i>	
+								<a href='https://play.google.com/store/apps/details?id=com.setmusic.setcoins&hl=en' >
+									<i className='fa app-icons clickable fa-android'></i>
+								</a>	
+							</div>
+						</div>	
 					</div>
 
 			)
@@ -37,5 +45,4 @@ export default class FeelTheEconomy extends Base{
 
 
 	
-
 

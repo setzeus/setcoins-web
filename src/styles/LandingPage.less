@@ -1,103 +1,107 @@
-	
-	#landing-page{
-		font-family: Avenir Light;
+
+	#section0{
 		background-image: url('http://d1wbxby8dwa4u.cloudfront.net/namecheap/setcoinsBackground.png') ;
 		background-size: 100%;
-		width: 99vw;
-		height: 100vh;
+		padding: 0;
+		position: relative;
+		overflow: hidden; 
+	}
+	#landing-page{
+		font-family: Avenir Light;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
 	}
 	.economy-button{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		
-
 	}
 	.root-container{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		justify-content: space-between;
-		height: 350px;
-		width: 1200px;
+		justify-content: flex-start;
+		height: 800px;
+		width: 2000px;
 		margin-top: 10px;
+		margin-top: 80px;
 		
 	}
-
 	.economy-container{
-		
-		width:900px;
-		height: 300px;
+		width: 2000px;
+		height: 900px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		align-items: flex-start;
+		justify-content: space-around;
 		
 	}
-
 	.can-you-feel-it{
+		width: 1300px;
+		height: 400px;
 		color: #dadfe1;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 	}
 	#feel-the-new-economy{
-		font-size: 3vw;
+		font-size: 4vw;
+		color: #ffffff;
 	}
 	.free-btc{
 		margin-top: 10px;
 		p{
-			font-size: 2vw;
+			font-size: 2.5vw;
+			margin-bottom: 30px;
 		}
 	}
-	@media(max-width: 1100px){
-		.root-container{
-			width:900px
-		}
+	
+	#video{
+		width: 800px;
+		height: 450px; 
 	}
-	@media(max-width:900px){
-		.root-container{
-			width: 600px;
-			height: 600px;
-			justify-content: center;
-			align-items: center;
-
-		}
-		.economy-container{
-			flex-direction: column;
-			justify-content: space-around;
-			width: 600px;
-			height: 400px;
-			align-items: center;
-		}
-		.can-you-feel-it{
-			justify-content: center;
-			align-items: center;
-		}
-		#feel-the-new-economy{
-			font-size: 7vw;
-		}	
+	.buttons-container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
 	}
-
-	@media(max-width: 500px){
-		.root-container{
-			width: 300px;
-			margin: 0;
-			justify-content: flex-start;
-		}
-		#feel-the-new-economy{
-		font-size: 8vw;
-		}
-		.free-btc{
-			margin-top: 10px;
-			p{
-				font-size: 4vw;
-			}
-		}
+	.app-icons{
+		color: white;
+		font-size: 6vw;
 	}
+	.app-icons:hover{
+		color: #ffb701;
+	}
+	.app-container{
+		
+		width: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
 
+	}
+	.app-container .screen{
+		color: #ffb701;	
+	}
+	.app-container .screen:hover{
+		color: #1976d3;
+	}
+	.app-icons .screen{
+		cursor: pointer;
+	}
+	.app-icons.clickable {
+    	cursor: pointer;
+	}
+	
 
-
+	
 
 
 

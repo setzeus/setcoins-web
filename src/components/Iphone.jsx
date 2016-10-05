@@ -42,10 +42,8 @@ export default class Iphone extends Base {
 	render() {
 	
 		return (
-			<div id='iphone'>
-				<div className='iphone-container'>
-					<img className='iphone'  src='img/img-iphone2.png'></img>
-				</div>
+			<div className='box-phone' id='iphone'>
+				<img className='iphone'  src='http://d1wbxby8dwa4u.cloudfront.net/namecheap/nexus-empty.png'></img>
 			</div>
 		)
 	}
